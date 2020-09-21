@@ -29,6 +29,7 @@
     width: 100vw;
     display: block;
     overflow: hidden;
+    text-align: center;
     padding: 70px 5;
     box-sizing: border-box;
     background-color: #03030d
@@ -124,7 +125,6 @@
             {% endblock %}
 		</section>
 
-		{% include 'parts/newsletter.html' %}
 
 		<footer class="footer">
 			<div class="columns">
@@ -160,7 +160,7 @@
 				</div>
 			</div>
 		</footer>
-
+		{% include 'parts/newsletter.html' %}
 		<script src="https://unpkg.com/vuex@3.5.1/dist/vuex.js"></script>
 		<script>
 			var store = new Vuex.Store({
